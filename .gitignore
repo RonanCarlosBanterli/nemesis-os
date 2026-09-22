@@ -1,0 +1,49 @@
+# O OS que o comprador gera nasce na RAIZ. É conteúdo dele, não versiona. Assim um
+# git pull de melhoria do .genesis/ nunca conflita com o OS de quem já montou.
+# Exceção: .claude/commands/ é do template (os comandos /setup e /painel), fica versionado.
+# (Skills bônus moram versionadas em .genesis/skills-bonus/ e o instalar() as copia pra
+# .claude/skills/ na montagem — por isso .claude/skills/ segue 100% ignorado aqui.)
+/.claude/*
+!/.claude/commands/
+# contexto/ é do comprador, não versiona. EXCEÇÃO: a pasta contexto/referencia/ já vem
+# no template (com o README que explica o que jogar lá), pra o comprador soltar os docs
+# do negócio ANTES de montar, sem ter que criar pasta. O que ele soltar lá segue ignorado.
+/contexto/*
+!/contexto/referencia/
+/contexto/referencia/*
+!/contexto/referencia/README.md
+# contexto/dados/ é a planilha do comprador: faturamento, folha, cliente com nome e CPF.
+# NUNCA versiona. A pasta vem no template só com o README que explica o que jogar
+# ali, e todo o resto é ignorado. Esta regra nasce junto com a pasta de propósito:
+# se ela entrar depois, a primeira planilha já vazou pro GitHub de quem publicar o
+# repo (e o público deste produto publica, porque a gente ensina GitHub).
+# (a pasta era /dados/ na raiz até 23/07/2026; virou contexto/dados/ pra tudo que o OS
+#  conhece morar sob contexto/ e aparecer na aba Contexto do painel.)
+!/contexto/dados/
+/contexto/dados/*
+!/contexto/dados/README.md
+/producao/
+/meu-os.json
+/.genesis-atividade.jsonl
+/.genesis-canvas-layout.json
+/.genesis-tasks.json
+
+# CREDENCIAL. A skill /conectar escreve a chave das ferramentas do comprador aqui, e
+# ela é da conta DELE (ou da empresa dele). Sem esta regra, a primeira integração que
+# ele fizer vira um segredo desprotegido no repositório, e este público publica repo no
+# GitHub porque a gente ensina GitHub. Cobre .env na raiz e em qualquer subpasta.
+.env
+.env.*
+!.env.example
+**/.env
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.scratch/
+
+# Artefato temporário do teste do profiler: o caso "recusa binário" escreve um _x.docx
+# de mentira e não limpa quando o próprio teste falha antes do cleanup. Já viajou pro
+# repo do aluno uma vez (05ca959). Fixture de verdade não começa com _.
+/.genesis/skills-core/analisar/tests/fixtures/_*

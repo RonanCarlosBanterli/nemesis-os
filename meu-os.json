@@ -1,0 +1,69 @@
+{
+  "agentes": [
+    {
+      "ic": "🔌",
+      "nome": "Integrador de Dados XP",
+      "por": "Ataca direto sua maior dor: desenha e documenta o caminho pra automatizar a coleta na plataforma da <b>XP</b>, reduzindo o login manual toda vez que o dashboard precisa atualizar.",
+      "slug": "integrador-dados-xp",
+      "tag": "Essencial"
+    },
+    {
+      "ic": "📊",
+      "nome": "Analista de Performance de Assessores",
+      "por": "Cuida da modelagem DAX e da lógica dos KPIs de performance dos 17 assessores comerciais e das demais áreas, pra você parar de reconstruir medida do zero a cada pedido novo.",
+      "slug": "analista-performance-assessores",
+      "tag": "Essencial"
+    },
+    {
+      "ic": "📝",
+      "nome": "Relator para Stakeholders",
+      "por": "Transforma o que já está pronto no Power BI em relatório e apresentação objetiva pros sócios e gestores, no tom claro e comercial que você já usa.",
+      "slug": "relator-para-stakeholders",
+      "tag": "Recomendado"
+    },
+    {
+      "ic": "🎨",
+      "nome": "Guardião do Design System",
+      "por": "Extrai e mantém o padrão visual sofisticado da <b>Kronor</b> (e da Fernanda Rizzo Arquitetura) em todo material, dashboard e post, sem depender de você lembrar a regra de cada marca.",
+      "slug": "design-system",
+      "tag": "Essencial"
+    }
+  ],
+  "entendi": [
+    "Você é o BI Specialist da <b>Kronor Capital</b>, cuidando de KPIs, dashboards e relatórios pra uma equipe de 32 pessoas entre assessores, operacional e produtos.",
+    "O maior ralo do seu tempo é puxar dado da plataforma da XP na mão, login toda vez, antes de sequer começar a tratar e montar o Power BI.",
+    "Não existe hoje nenhum export automático: cada atualização de dashboard começa com esse trabalho manual repetitivo.",
+    "O time abaixo ataca isso na raiz (automação de coleta) e depois cuida do que vem depois: tratamento, indicador de performance dos assessores e a entrega pros stakeholders."
+  ],
+  "fonte": {
+    "sub": "Hoje é manual, login e download toda vez. O primeiro passo é estruturar essa extração num formato fixo (planilha ou pasta padrão) pra depois automatizar a atualização do Power BI em cima dela.",
+    "titulo": "Sua extração da plataforma da XP"
+  },
+  "nums": {
+    "agentes": 4,
+    "skills": 3
+  },
+  "skills": [
+    {
+      "cmd": "/extrai-xp",
+      "desc": "Roteiro passo a passo (com Power Automate/Python) pra deixar a extração da plataforma da XP repetível, cortando o login manual toda vez.",
+      "ic": "⬇️",
+      "nome": "Extrair Dados XP",
+      "slug": "extrai-xp"
+    },
+    {
+      "cmd": "/atualiza-dashboard",
+      "desc": "Pega o dado já tratado e aplica no Power BI seguindo seu padrão de medidas DAX, pra você não remontar visual do zero a cada ciclo.",
+      "ic": "🔄",
+      "nome": "Atualizar Dashboard",
+      "slug": "atualiza-dashboard"
+    },
+    {
+      "cmd": "/relatorio-assessores",
+      "desc": "Gera o resumo de KPI por assessor pronto pra apresentar, puxando do mesmo modelo de dados que você já mantém.",
+      "ic": "📄",
+      "nome": "Relatório de Assessores",
+      "slug": "relatorio-assessores"
+    }
+  ]
+}
