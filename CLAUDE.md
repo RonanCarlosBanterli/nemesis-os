@@ -1,6 +1,6 @@
 # Meu OS
 
-Sistema operacional pessoal montado pelo Genesis Studio. Este arquivo
+Sistema operacional pessoal montado pelo Nemesis Studio. Este arquivo
 é lido pelo Claude Code em TODA sessão: é o que faz o seu time entender VOCÊ.
 
 ## Quem sou eu
