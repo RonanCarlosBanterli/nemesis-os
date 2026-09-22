@@ -1,6 +1,6 @@
 # Meu OS
 
-Gerado pelo Genesis Studio. 4 agentes, 8 skills, feitos sob medida pra você.
+Gerado pelo Nemesis Studio. 4 agentes, 8 skills, feitos sob medida pra você.
 
 Estrutura do seu OS:
 - `.claude/agents/`: **o seu time, como subagents reais do Claude Code** (invocáveis)
