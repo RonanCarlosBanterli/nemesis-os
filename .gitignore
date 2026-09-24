@@ -1,7 +1,7 @@
 # O OS que o comprador gera nasce na RAIZ. É conteúdo dele, não versiona. Assim um
-# git pull de melhoria do .genesis/ nunca conflita com o OS de quem já montou.
+# git pull de melhoria do .nemesis/ nunca conflita com o OS de quem já montou.
 # Exceção: .claude/commands/ é do template (os comandos /setup e /painel), fica versionado.
-# (Skills bônus moram versionadas em .genesis/skills-bonus/ e o instalar() as copia pra
+# (Skills bônus moram versionadas em .nemesis/skills-bonus/ e o instalar() as copia pra
 # .claude/skills/ na montagem — por isso .claude/skills/ segue 100% ignorado aqui.)
 /.claude/*
 !/.claude/commands/
@@ -24,9 +24,9 @@
 !/contexto/dados/README.md
 /producao/
 /meu-os.json
-/.genesis-atividade.jsonl
-/.genesis-canvas-layout.json
-/.genesis-tasks.json
+/.nemesis-atividade.jsonl
+/.nemesis-canvas-layout.json
+/.nemesis-tasks.json
 
 # CREDENCIAL. A skill /conectar escreve a chave das ferramentas do comprador aqui, e
 # ela é da conta DELE (ou da empresa dele). Sem esta regra, a primeira integração que
@@ -46,4 +46,4 @@ __pycache__/
 # Artefato temporário do teste do profiler: o caso "recusa binário" escreve um _x.docx
 # de mentira e não limpa quando o próprio teste falha antes do cleanup. Já viajou pro
 # repo do aluno uma vez (05ca959). Fixture de verdade não começa com _.
-/.genesis/skills-core/analisar/tests/fixtures/_*
+/.nemesis/skills-core/analisar/tests/fixtures/_*

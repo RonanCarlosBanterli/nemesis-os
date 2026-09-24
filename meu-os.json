@@ -1,43 +1,42 @@
 {
   "agentes": [
     {
-      "ic": "🔌",
-      "nome": "Integrador de Dados XP",
-      "por": "Ataca direto sua maior dor: desenha e documenta o caminho pra automatizar a coleta na plataforma da <b>XP</b>, reduzindo o login manual toda vez que o dashboard precisa atualizar.",
-      "slug": "integrador-dados-xp",
+      "ic": "⚙️",
+      "nome": "Automatizador de Processos",
+      "por": "Você disse que montar relatórios manualmente é o que mais consome seu tempo hoje. Esse especialista desenha o fluxo pra tirar a planilha Excel manual da jogada, usando Power Query, Power Automate e Python, e vira parceiro pros próximos projetos de automação que você quer assumir.",
+      "slug": "automatizador-de-processos",
       "tag": "Essencial"
     },
     {
       "ic": "📊",
-      "nome": "Analista de Performance de Assessores",
-      "por": "Cuida da modelagem DAX e da lógica dos KPIs de performance dos 17 assessores comerciais e das demais áreas, pra você parar de reconstruir medida do zero a cada pedido novo.",
-      "slug": "analista-performance-assessores",
+      "nome": "Storyteller de Indicadores",
+      "por": "Elaborar apresentações pra stakeholders é parte do seu trabalho hoje e é feito manualmente. Esse agente pega os indicadores prontos e monta a narrativa visual, no tom executivo e direto que você já usa, sem você lapidar slide um por um.",
+      "slug": "storyteller-de-indicadores",
       "tag": "Essencial"
     },
     {
-      "ic": "📝",
-      "nome": "Relator para Stakeholders",
-      "por": "Transforma o que já está pronto no Power BI em relatório e apresentação objetiva pros sócios e gestores, no tom claro e comercial que você já usa.",
-      "slug": "relator-para-stakeholders",
+      "ic": "🎯",
+      "nome": "Analista de Indicadores de Assessores",
+      "por": "Você acompanha engajamento e performance dos 17 assessores comerciais. Esse especialista cuida só disso: cruza os dados, aponta desvio e sugere onde focar, liberando você da análise repetitiva mês a mês.",
+      "slug": "analista-de-indicadores-de-assessores",
       "tag": "Recomendado"
     },
     {
       "ic": "🎨",
       "nome": "Guardião do Design System",
-      "por": "Extrai e mantém o padrão visual sofisticado da <b>Kronor</b> (e da Fernanda Rizzo Arquitetura) em todo material, dashboard e post, sem depender de você lembrar a regra de cada marca.",
+      "por": "Toda apresentação e dashboard que sai da Kronor precisa da mesma cara profissional e sofisticada. Ele extrai o padrão visual do que você já usa e garante que todo relatório novo saia consistente, sem você redesenhar do zero.",
       "slug": "design-system",
       "tag": "Essencial"
     }
   ],
   "entendi": [
-    "Você é o BI Specialist da <b>Kronor Capital</b>, cuidando de KPIs, dashboards e relatórios pra uma equipe de 32 pessoas entre assessores, operacional e produtos.",
-    "O maior ralo do seu tempo é puxar dado da plataforma da XP na mão, login toda vez, antes de sequer começar a tratar e montar o Power BI.",
-    "Não existe hoje nenhum export automático: cada atualização de dashboard começa com esse trabalho manual repetitivo.",
-    "O time abaixo ataca isso na raiz (automação de coleta) e depois cuida do que vem depois: tratamento, indicador de performance dos assessores e a entrega pros stakeholders."
+    "Você é o <b>BI da Kronor Capital</b>, hoje o maior ladrão do seu tempo é montar relatórios e apresentações na mão a partir de planilhas Excel.",
+    "A meta é clara: tirar esse trabalho manual das suas costas pra sobrar tempo e você assumir mais projetos de automação.",
+    "O time abaixo ataca direto isso: quem automatiza o processo, quem transforma número em apresentação pronta pra stakeholder, e quem cuida do visual padrão da casa."
   ],
   "fonte": {
-    "sub": "Hoje é manual, login e download toda vez. O primeiro passo é estruturar essa extração num formato fixo (planilha ou pasta padrão) pra depois automatizar a atualização do Power BI em cima dela.",
-    "titulo": "Sua extração da plataforma da XP"
+    "sub": "É de onde os relatórios e apresentações saem hoje. Conecte ela como base viva pra os agentes trabalharem em cima do dado real, sem retrabalho manual.",
+    "titulo": "sua planilha de indicadores no Excel"
   },
   "nums": {
     "agentes": 4,
@@ -45,25 +44,25 @@
   },
   "skills": [
     {
-      "cmd": "/extrai-xp",
-      "desc": "Roteiro passo a passo (com Power Automate/Python) pra deixar a extração da plataforma da XP repetível, cortando o login manual toda vez.",
-      "ic": "⬇️",
-      "nome": "Extrair Dados XP",
-      "slug": "extrai-xp"
+      "cmd": "/relatorio-mensal",
+      "desc": "Puxa os dados direto da sua planilha de indicadores, monta o relatório gerencial formatado e pronto pra revisão, sem você copiar e colar número por número.",
+      "ic": "📑",
+      "nome": "Relatório Mensal Automático",
+      "slug": "relatorio-mensal"
     },
     {
-      "cmd": "/atualiza-dashboard",
-      "desc": "Pega o dado já tratado e aplica no Power BI seguindo seu padrão de medidas DAX, pra você não remontar visual do zero a cada ciclo.",
-      "ic": "🔄",
-      "nome": "Atualizar Dashboard",
-      "slug": "atualiza-dashboard"
+      "cmd": "/apresentacao-stakeholders",
+      "desc": "Transforma os indicadores do mês em slides prontos, com narrativa e visual no padrão da Kronor, cortando o trabalho manual de montar apresentação do zero.",
+      "ic": "📽️",
+      "nome": "Apresentação pra Stakeholders",
+      "slug": "apresentacao-stakeholders"
     },
     {
-      "cmd": "/relatorio-assessores",
-      "desc": "Gera o resumo de KPI por assessor pronto pra apresentar, puxando do mesmo modelo de dados que você já mantém.",
-      "ic": "📄",
-      "nome": "Relatório de Assessores",
-      "slug": "relatorio-assessores"
+      "cmd": "/raio-x-assessor",
+      "desc": "Gera um panorama rápido de engajamento e performance de um assessor específico ou da equipe toda, puxando da sua base de indicadores, pronto pra reunião de acompanhamento.",
+      "ic": "🔍",
+      "nome": "Raio X do Assessor",
+      "slug": "raio-x-assessor"
     }
   ]
 }
